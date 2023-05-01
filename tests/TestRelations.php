@@ -1,9 +1,11 @@
 <?php
 
-use Iya30n\DynamicAcl\ACL;
-use Iya30n\DynamicAcl\Models\Role;
-use Iya30n\DynamicAcl\Route;
-use Tests\Dependencies\User;
+namespace DynamicAclTest;
+
+use DynamicAcl\ACL;
+use DynamicAcl\Models\Role;
+use DynamicAcl\Route;
+use DynamicAclTest\Dependencies\User;
 
 class TestRelations extends TestCase
 {

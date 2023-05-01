@@ -1,6 +1,8 @@
 <?php
 
-use Iya30n\DynamicAcl\Route;
+namespace DynamicAclTest;
+
+use DynamicAcl\Route;
 
 class TestRoute extends TestCase
 {

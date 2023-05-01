@@ -1,12 +1,12 @@
 <?php
 
-namespace Iya30n\DynamicAcl\Http\Controllers;
+namespace DynamicAcl\Http\Controllers;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
-use Iya30n\DynamicAcl\ACL;
-use Iya30n\DynamicAcl\Models\Role;
-use Iya30n\DynamicAcl\Http\Requests\RoleRequest;
+use DynamicAcl\ACL;
+use DynamicAcl\Models\Role;
+use DynamicAcl\Http\Requests\RoleRequest;
 
 class RoleController extends Controller
 {

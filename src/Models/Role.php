@@ -1,6 +1,6 @@
 <?php
 
-namespace Iya30n\DynamicAcl\Models;
+namespace DynamicAcl\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -62,7 +62,7 @@ class Role extends Model
      */
     public function users()
     {
-        $userModel = config()->has('easy_panel.user_model') ? config('easy_panel.user_model') : config('auth.providers.users.model');
+        $userModel = config()->has('weirdo_panel.user_model') ? config('weirdo_panel.user_model') : config('auth.providers.users.model');
         return $this->belongsToMany($userModel);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Iya30n\DynamicAcl;
+namespace DynamicAcl;
 
 use Closure;
 use Illuminate\Support\Str;

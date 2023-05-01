@@ -55,11 +55,11 @@
 
                     <div class="form-check d-flex justify-content-between w-100">
 
-                        <div class="@if(config('easy_panel.rtl_mode')) mr-2 @endif">
+                        <div class="@if(config('weirdo_panel.rtl_mode')) mr-2 @endif">
                             <h4 class="align-self-center">{{ __($entityName) }}</h4>
                         </div>
 
-                        <div class="@if(config('easy_panel.rtl_mode')) ml-1 @endif">
+                        <div class="@if(config('weirdo_panel.rtl_mode')) ml-1 @endif">
                             <input type="checkbox" class="form-check-input" onchange="selectAll(this, '{{$dashKey}}')">
                         </div>
 
@@ -103,7 +103,7 @@
 
 
 <!-- <style>
-    @ if(!config('easy_panel.rtl_mode'))
+    @ if(!config('weirdo_panel.rtl_mode'))
     .form-check {
         padding: 0;
     }

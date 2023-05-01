@@ -1,7 +1,10 @@
 <?php
 
-use Iya30n\DynamicAcl\Models\Role;
-use Tests\Dependencies\Post;
+namespace DynamicAclTest;
+
+use Exception;
+use DynamicAcl\Models\Role;
+use DynamicAclTest\Dependencies\Post;
 
 class TestisOwner extends TestCase
 {

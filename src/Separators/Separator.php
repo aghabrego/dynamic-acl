@@ -1,9 +1,9 @@
 <?php
 
-namespace Iya30n\DynamicAcl\Separators;
+namespace DynamicAcl\Separators;
 
 use Illuminate\Support\Manager;
-use Iya30n\DynamicAcl\Separators\{RouteName, Uri};
+use DynamicAcl\Separators\{RouteName, Uri};
 
 class Separator extends Manager
 {

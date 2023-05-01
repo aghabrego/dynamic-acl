@@ -1,8 +1,8 @@
 <?php
 
-namespace Iya30n\DynamicAcl\Macros;
+namespace DynamicAcl\Macros;
 
-use Iya30n\DynamicAcl\ACL;
+use DynamicAcl\ACL;
 
 class HasPermission
 {

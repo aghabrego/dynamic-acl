@@ -1,6 +1,6 @@
 <?php
 
-namespace Iya30n\DynamicAcl;
+namespace DynamicAcl;
 
 use Illuminate\Support\Facades\Facade;
 

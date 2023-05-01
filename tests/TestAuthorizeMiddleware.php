@@ -1,7 +1,9 @@
 <?php
 
-use Iya30n\DynamicAcl\Models\Role;
-use Tests\Dependencies\Post;
+namespace DynamicAclTest;
+
+use DynamicAcl\Models\Role;
+use DynamicAclTest\Dependencies\Post;
 
 class TestAuthorizeMiddleware extends TestCase
 {

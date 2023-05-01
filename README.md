@@ -15,7 +15,7 @@ Dynamic ACL is a package that handles Access Control Level on your Laravel Appli
 - Define a name for your routes.
 
 ```php
-composer require iya30n/dynamic-acl
+composer require weirdo/dynamic-acl
 ```
 
 ### Publish config file
@@ -67,7 +67,7 @@ Just add **dynamicAcl** middleware to your routes.
 You can write your queries with the Role model to get the list of roles and use it on your admin/user CRUD views.
 
 ```php
-use Iya30n\DynamicAcl\Models\Role;
+use Weirdo\DynamicAcl\Models\Role;
 ```
 
 <h3 id="sync_user_roles">Sync user roles</h3>

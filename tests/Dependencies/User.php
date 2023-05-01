@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Dependencies;
+namespace DynamicAclTest\Dependencies;
 
 // use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as AuthUser;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Iya30n\DynamicAcl\Console\Commands;
+namespace DynamicAcl\Console\Commands;
 
 use Illuminate\Console\Command;
-use Iya30n\DynamicAcl\Models\Role;
+use DynamicAcl\Models\Role;
 
 class MakeAdmin extends Command
 {

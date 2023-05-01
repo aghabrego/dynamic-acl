@@ -1,6 +1,6 @@
 <?php
 
-namespace Iya30n\DynamicAcl\Macros;
+namespace DynamicAcl\Macros;
 
 use Illuminate\Support\Str;
 use Exception;

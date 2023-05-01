@@ -1,11 +1,16 @@
 <?php
 
-use Iya30n\DynamicAcl\Http\Middleware\Admin;
-use Iya30n\DynamicAcl\Http\Middleware\Authorize;
-use Tests\Dependencies\Post;
-use Tests\Dependencies\User;
+namespace DynamicAclTest;
 
-abstract class TestCase extends Orchestra\Testbench\TestCase
+use DynamicAcl\Http\Middleware\Admin;
+use DynamicAclTest\Dependencies\Post;
+use DynamicAclTest\Dependencies\User;
+use DynamicAcl\Http\Middleware\Authorize;
+use Orchestra\Testbench\TestCase as _TestCase;
+use DynamicAcl\Providers\DynamicAclServiceProvider;
+use Javoscript\MacroableModels\MacroableModelsServiceProvider;
+
+abstract class TestCase extends _TestCase
 {
     protected User $admin;
 
@@ -23,8 +28,8 @@ abstract class TestCase extends Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            'Iya30n\DynamicAcl\Providers\DynamicAclServiceProvider',
-            'Javoscript\MacroableModels\MacroableModelsServiceProvider'
+            DynamicAclServiceProvider::class,
+            MacroableModelsServiceProvider::class,
         ];
     }
 

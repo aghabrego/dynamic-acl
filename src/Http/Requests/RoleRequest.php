@@ -1,6 +1,6 @@
 <?php
 
-namespace Iya30n\DynamicAcl\Http\Requests;
+namespace DynamicAcl\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

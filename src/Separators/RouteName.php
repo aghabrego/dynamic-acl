@@ -1,9 +1,10 @@
 <?php
 
 
-namespace Iya30n\DynamicAcl\Separators;
+namespace DynamicAcl\Separators;
 
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
 class RouteName extends BaseSeparator
@@ -37,7 +38,7 @@ class RouteName extends BaseSeparator
         }
 
         $userPermissions = (strpos($access, '.') != false) ?
-                            \Arr::dot($permissions) :
+                            Arr::dot($permissions) :
                             $permissions;
 
         return isset($userPermissions[$access]);

@@ -1,8 +1,10 @@
 <?php
 
-use Iya30n\DynamicAcl\ACL;
-use Iya30n\DynamicAcl\Models\Role;
-use Iya30n\DynamicAcl\Route;
+namespace DynamicAclTest;
+
+use DynamicAcl\ACL;
+use DynamicAcl\Models\Role;
+use DynamicAcl\Route;
 
 class TestAclFacade extends TestCase
 {

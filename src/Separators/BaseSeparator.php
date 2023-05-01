@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Iya30n\DynamicAcl\Separators;
+namespace DynamicAcl\Separators;
 
 
 use Illuminate\Support\Collection;
-use Iya30n\DynamicAcl\Route;
+use DynamicAcl\Route;
 
 abstract class BaseSeparator
 {

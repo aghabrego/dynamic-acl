@@ -1,9 +1,10 @@
 <?php
 
-use Iya30n\DynamicAcl\Http\Controllers\RoleController;
+use Illuminate\Support\Facades\Route;
+use DynamicAcl\Http\Controllers\RoleController;
 
 
-if (!config()->has('easy_panel')) {
+if (!config()->has('weirdo_panel')) {
     Route::group([
         'middleware' => ['web', 'dynamicAcl'],
         'prefix' => 'admin',

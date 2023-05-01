@@ -1,17 +1,9 @@
 {
-    "name": "iya30n/dynamic-acl",
-    "autoload": {
-        "psr-4": {
-            "Iya30n\\DynamicAcl\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "classmap": ["tests/TestCase.php"]
-    },
+    "name": "weirdo/dynamic-acl",
     "authors": [
         {
-            "name": "iya30n",
-            "email": "varmeziyaryasin@gmail.com"
+            "name": "Angel Hidalgo",
+            "email": "aghabrego@gmail.com"
         }
     ],
     "require": {
@@ -22,7 +14,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Iya30n\\DynamicAcl\\Providers\\DynamicAclServiceProvider"
+                "DynamicAcl\\Providers\\DynamicAclServiceProvider"
             ]
         }
     },
@@ -30,5 +22,15 @@
         "orchestra/testbench": "^7.3",
         "mockery/mockery": "^1.5",
         "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DynamicAcl\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DynamicAclTest\\" : "tests/"
+        }
     }
 }

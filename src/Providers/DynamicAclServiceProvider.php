@@ -1,17 +1,17 @@
 <?php
 
-namespace Iya30n\DynamicAcl\Providers;
+namespace DynamicAcl\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\View;
-use Iya30n\DynamicAcl\Macros\HasPermission;
-use Iya30n\DynamicAcl\Macros\IsOwner;
-use Iya30n\DynamicAcl\Models\Role;
+use DynamicAcl\Macros\HasPermission;
+use DynamicAcl\Macros\IsOwner;
+use DynamicAcl\Models\Role;
 use Illuminate\Support\ServiceProvider;
-use Iya30n\DynamicAcl\Http\Middleware\{Admin, Authorize};
-use Iya30n\DynamicAcl\Console\Commands\MakeAdmin;
-use Iya30n\DynamicAcl\Separators\Separator;
-use \Javoscript\MacroableModels\Facades\MacroableModels;
+use DynamicAcl\Http\Middleware\{Admin, Authorize};
+use DynamicAcl\Console\Commands\MakeAdmin;
+use DynamicAcl\Separators\Separator;
+use Javoscript\MacroableModels\Facades\MacroableModels;
 
 class DynamicAclServiceProvider extends ServiceProvider
 {

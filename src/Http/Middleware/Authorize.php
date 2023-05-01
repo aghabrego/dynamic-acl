@@ -1,6 +1,6 @@
 <?php
 
-namespace Iya30n\DynamicAcl\Http\Middleware;
+namespace DynamicAcl\Http\Middleware;
 
 use Closure;
 use Illuminate\Database\Eloquent\Model;
