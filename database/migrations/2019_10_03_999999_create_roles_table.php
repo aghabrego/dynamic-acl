@@ -21,10 +21,9 @@ class CreateRolesTable extends Migration
         });
 
         Schema::create('role_user', function (Blueprint $table) {
-            $table->bigInteger('role_id')->unsigned()->index();
-            $table->foreign('role_id')->references('id')->on('roles')->onUpdate('cascade')->onDelete('cascade');
-            $table->bigInteger('user_id')->unsigned()->index();
-            $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');;
+            $table->foreignIdFor(\DynamicAcl\Models\Role::class);
+            $modelClass = file_exists(app_path('User.php')) ? 'App\User' : 'App\Models\User';
+            $table->foreignIdFor($modelClass);
         });
     }
 
