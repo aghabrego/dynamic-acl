@@ -21,8 +21,8 @@ class CreateRolesTable extends Migration
         });
 
         Schema::create('role_user', function (Blueprint $table) {
-            $table->foreignIdFor(\DynamicAcl\Models\Role::class);
-            $table->foreignIdFor(\DynamicAclTest\Dependencies\User::class);
+            $table->bigInteger('role_id')->unsigned()->index();
+            $table->bigInteger('user_id')->unsigned()->index();
         });
     }
 
