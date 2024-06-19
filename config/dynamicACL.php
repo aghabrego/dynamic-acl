@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'enable' => true,
+
     /**
      * rtl || ltr
      */

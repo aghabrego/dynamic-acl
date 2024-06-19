@@ -17,6 +17,10 @@ class DynamicAclServiceProvider extends ServiceProvider
 {
     public function boot()
     {
+        if(!config('dynamicACL.enable', true)) {
+            return;
+        }
+
         $this->setSeparatorDriver();
 
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'dynamicACL');
